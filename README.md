@@ -30,8 +30,8 @@ The Histogram of gray scale image and color image is shown.
 ```python
 import cv2
 import matplotlib.pyplot as plt
-gray_image = cv2.imread("cat1.jpg")
-color_image = cv2.imread("cat2.jpg",-1)
+gray_image = cv2.imread("rose.jpg")
+color_image = cv2.imread("rose.jpg",-1)
 cv2.imshow("Gray Image",gray_image)
 cv2.imshow("Colour Image",color_image)
 cv2.waitKey(0)
@@ -40,8 +40,8 @@ cv2.destroyAllWindows()
 ```python
 import numpy as np
 import cv2
-Gray_image = cv2.imread("cat1.jpg")
-Color_image = cv2.imread("cat2.jpg")
+Gray_image = cv2.imread("rose.jpg")
+Color_image = cv2.imread("rose.jpg")
 import matplotlib.pyplot as plt
 gray_hist = cv2.calcHist([Gray_image],[0],None,[256],[0,256])
 color_hist = cv2.calcHist([Color_image],[0],None,[256],[0,256])
@@ -66,7 +66,7 @@ cv2.waitKey(0)
 ```
 ```python
 import cv2
-gray_image = cv2.imread("cat1.jpg",0)
+gray_image = cv2.imread("rose.jpg",0)
 cv2.imshow('Grey Scale Image',gray_image)
 equ = cv2.equalizeHist(gray_image)
 cv2.imshow("Equalized Image",equ)
